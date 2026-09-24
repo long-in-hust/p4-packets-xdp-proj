@@ -1,0 +1,585 @@
+
+[2026-06-27 04:36:06.742] /p4.v1.P4Runtime/SetForwardingPipelineConfig
+---
+Message too long (262191 bytes)! Skipping log...
+---
+
+[2026-06-27 04:36:11.340] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 41111264
+      match {
+        field_id: 1
+        exact {
+          value: "\000"
+        }
+      }
+      action {
+        action {
+          action_id: 18619500
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.353] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 41111264
+      match {
+        field_id: 1
+        exact {
+          value: "\017"
+        }
+      }
+      action {
+        action {
+          action_id: 23667982
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.360] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 38893673
+      match {
+        field_id: 1
+        exact {
+          value: "\000"
+        }
+      }
+      action {
+        action {
+          action_id: 23048434
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.366] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 38893673
+      match {
+        field_id: 1
+        exact {
+          value: "\017"
+        }
+      }
+      action {
+        action {
+          action_id: 25742154
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.375] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 34706461
+      match {
+        field_id: 1
+        exact {
+          value: "\000"
+        }
+      }
+      action {
+        action {
+          action_id: 25811782
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.383] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 34706461
+      match {
+        field_id: 1
+        exact {
+          value: "\017"
+        }
+      }
+      action {
+        action {
+          action_id: 18378345
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.395] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 49711028
+      match {
+        field_id: 1
+        exact {
+          value: "\000"
+        }
+      }
+      action {
+        action {
+          action_id: 30347227
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.405] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 49711028
+      match {
+        field_id: 1
+        exact {
+          value: "\017"
+        }
+      }
+      action {
+        action {
+          action_id: 33230895
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.412] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 45687609
+      match {
+        field_id: 1
+        exact {
+          value: "\000"
+        }
+      }
+      action {
+        action {
+          action_id: 27014005
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.418] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 45687609
+      match {
+        field_id: 1
+        exact {
+          value: "\017"
+        }
+      }
+      action {
+        action {
+          action_id: 25933136
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.426] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 40226451
+      match {
+        field_id: 1
+        exact {
+          value: "\000"
+        }
+      }
+      action {
+        action {
+          action_id: 32392720
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.438] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 40226451
+      match {
+        field_id: 1
+        exact {
+          value: "\017"
+        }
+      }
+      action {
+        action {
+          action_id: 23420676
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.444] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 34858479
+      match {
+        field_id: 1
+        exact {
+          value: "\000"
+        }
+      }
+      action {
+        action {
+          action_id: 27552124
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.449] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 34858479
+      match {
+        field_id: 1
+        exact {
+          value: "\017"
+        }
+      }
+      action {
+        action {
+          action_id: 18021471
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.465] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 42127105
+      match {
+        field_id: 1
+        exact {
+          value: "\000"
+        }
+      }
+      action {
+        action {
+          action_id: 32908330
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.468] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 42127105
+      match {
+        field_id: 1
+        exact {
+          value: "\017"
+        }
+      }
+      action {
+        action {
+          action_id: 32613917
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.476] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 47213468
+      match {
+        field_id: 1
+        exact {
+          value: "\000"
+        }
+      }
+      action {
+        action {
+          action_id: 29904846
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.487] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 47213468
+      match {
+        field_id: 1
+        exact {
+          value: "\017"
+        }
+      }
+      action {
+        action {
+          action_id: 30297051
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.498] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 37753980
+      match {
+        field_id: 1
+        exact {
+          value: "\000"
+        }
+      }
+      action {
+        action {
+          action_id: 25289536
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.503] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 37753980
+      match {
+        field_id: 1
+        exact {
+          value: "\017"
+        }
+      }
+      action {
+        action {
+          action_id: 23850262
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.508] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 49683537
+      match {
+        field_id: 1
+        exact {
+          value: "\000"
+        }
+      }
+      action {
+        action {
+          action_id: 18182090
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.512] /p4.v1.P4Runtime/Write
+---
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 49683537
+      match {
+        field_id: 1
+        exact {
+          value: "\017"
+        }
+      }
+      action {
+        action {
+          action_id: 22959282
+        }
+      }
+    }
+  }
+}
+---
+
+[2026-06-27 04:36:11.516] /p4.v1.P4Runtime/Read
+---
+entities {
+  table_entry {
+  }
+}
+---

@@ -1,0 +1,14 @@
+[
+    {
+        "register_name": "sw_ingress_control.pool_save_pos",
+        "index": 0,
+        "bitwidth": 5,
+        "value": 2
+    },
+    {
+        "register_name": "sw_ingress_control.pool_save_pos",
+        "index": 0,
+        "bitwidth": 5,
+        "value": 2
+    }
+]

@@ -1,0 +1,16 @@
+psa_switch_CLI --thrift-ip localhost --thrift-port 9091
+
+Form:
+table_add <table name> <action name> <match fields> => <action parameters> [priority]
+
+register_write <register name> <index> <value>
+
+Cmds:
+
+echo 'register_write sw_ingress_control.max_num_packets_per_aggregation 0 2' | psa_switch_CLI --thrift-ip localhost --thrift-port 9091
+
+echo 'register_write sw_ingress_control.worker_packet_max 0 1' | psa_switch_CLI --thrift-ip localhost --thrift-port 9091
+
+echo 'register_read sw_ingress_control.max_num_packets_per_aggregation 0' | psa_switch_CLI --thrift-ip localhost --thrift-port 9091
+
+python3 ctrl_plane/p4runtime_api/agg_switch.py --p4info build/l4_aggregate.p4info.txtpb --bmv2-json build/l4_aggregate.json

@@ -1,0 +1,1125 @@
+# proto-file: p4/config/v1/p4info.proto
+# proto-message: p4.config.v1.P4Info
+
+pkg_info {
+  arch: "psa"
+}
+tables {
+  preamble {
+    id: 48575750
+    name: "sw_ingress_control.lookup"
+    alias: "lookup"
+  }
+  match_fields {
+    id: 1
+    name: "meta.occupancy_bitmap"
+    bitwidth: 12
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.no_of_pools"
+    bitwidth: 4
+    match_type: EXACT
+  }
+  action_refs {
+    id: 32552192
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 24578
+}
+tables {
+  preamble {
+    id: 38720112
+    name: "sw_ingress_control.ops_pool_0"
+    alias: "ops_pool_0"
+  }
+  match_fields {
+    id: 1
+    name: "meta.is_aggregation"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.pool_bitmap"
+    bitwidth: 12
+    match_type: EXACT
+  }
+  action_refs {
+    id: 27620170
+  }
+  action_refs {
+    id: 32306892
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 2
+}
+tables {
+  preamble {
+    id: 43693323
+    name: "sw_ingress_control.ops_pool_1"
+    alias: "ops_pool_1"
+  }
+  match_fields {
+    id: 1
+    name: "meta.is_aggregation"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.pool_bitmap"
+    bitwidth: 12
+    match_type: EXACT
+  }
+  action_refs {
+    id: 25434375
+  }
+  action_refs {
+    id: 27990600
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 2
+}
+tables {
+  preamble {
+    id: 47778181
+    name: "sw_ingress_control.ops_pool_2"
+    alias: "ops_pool_2"
+  }
+  match_fields {
+    id: 1
+    name: "meta.is_aggregation"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.pool_bitmap"
+    bitwidth: 12
+    match_type: EXACT
+  }
+  action_refs {
+    id: 29183236
+  }
+  action_refs {
+    id: 22724519
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 2
+}
+tables {
+  preamble {
+    id: 35122178
+    name: "sw_ingress_control.ops_pool_3"
+    alias: "ops_pool_3"
+  }
+  match_fields {
+    id: 1
+    name: "meta.is_aggregation"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.pool_bitmap"
+    bitwidth: 12
+    match_type: EXACT
+  }
+  action_refs {
+    id: 18164147
+  }
+  action_refs {
+    id: 18858801
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 2
+}
+tables {
+  preamble {
+    id: 39665806
+    name: "sw_ingress_control.ops_pool_4"
+    alias: "ops_pool_4"
+  }
+  match_fields {
+    id: 1
+    name: "meta.is_aggregation"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.pool_bitmap"
+    bitwidth: 12
+    match_type: EXACT
+  }
+  action_refs {
+    id: 22709311
+  }
+  action_refs {
+    id: 30696602
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 2
+}
+tables {
+  preamble {
+    id: 44376861
+    name: "sw_ingress_control.ops_pool_5"
+    alias: "ops_pool_5"
+  }
+  match_fields {
+    id: 1
+    name: "meta.is_aggregation"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.pool_bitmap"
+    bitwidth: 12
+    match_type: EXACT
+  }
+  action_refs {
+    id: 27877596
+  }
+  action_refs {
+    id: 25594366
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 2
+}
+tables {
+  preamble {
+    id: 45604155
+    name: "sw_ingress_control.ops_pool_6"
+    alias: "ops_pool_6"
+  }
+  match_fields {
+    id: 1
+    name: "meta.is_aggregation"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.pool_bitmap"
+    bitwidth: 12
+    match_type: EXACT
+  }
+  action_refs {
+    id: 32825202
+  }
+  action_refs {
+    id: 19934545
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 2
+}
+tables {
+  preamble {
+    id: 40943276
+    name: "sw_ingress_control.ops_pool_7"
+    alias: "ops_pool_7"
+  }
+  match_fields {
+    id: 1
+    name: "meta.is_aggregation"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.pool_bitmap"
+    bitwidth: 12
+    match_type: EXACT
+  }
+  action_refs {
+    id: 21805605
+  }
+  action_refs {
+    id: 28234327
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 2
+}
+tables {
+  preamble {
+    id: 36311584
+    name: "sw_ingress_control.ops_pool_8"
+    alias: "ops_pool_8"
+  }
+  match_fields {
+    id: 1
+    name: "meta.is_aggregation"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.pool_bitmap"
+    bitwidth: 12
+    match_type: EXACT
+  }
+  action_refs {
+    id: 25171593
+  }
+  action_refs {
+    id: 26572324
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 2
+}
+tables {
+  preamble {
+    id: 48954273
+    name: "sw_ingress_control.ops_pool_9"
+    alias: "ops_pool_9"
+  }
+  match_fields {
+    id: 1
+    name: "meta.is_aggregation"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.pool_bitmap"
+    bitwidth: 12
+    match_type: EXACT
+  }
+  action_refs {
+    id: 30244131
+  }
+  action_refs {
+    id: 29071472
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 2
+}
+tables {
+  preamble {
+    id: 33894800
+    name: "sw_ingress_control.ops_pool_10"
+    alias: "ops_pool_10"
+  }
+  match_fields {
+    id: 1
+    name: "meta.is_aggregation"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.pool_bitmap"
+    bitwidth: 12
+    match_type: EXACT
+  }
+  action_refs {
+    id: 17106590
+  }
+  action_refs {
+    id: 24338355
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 2
+}
+tables {
+  preamble {
+    id: 45288172
+    name: "sw_ingress_control.ops_pool_11"
+    alias: "ops_pool_11"
+  }
+  match_fields {
+    id: 1
+    name: "meta.is_aggregation"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.pool_bitmap"
+    bitwidth: 12
+    match_type: EXACT
+  }
+  action_refs {
+    id: 25048977
+  }
+  action_refs {
+    id: 22323575
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 2
+}
+tables {
+  preamble {
+    id: 40881109
+    name: "sw_ingress_control.append_stack"
+    alias: "append_stack"
+  }
+  match_fields {
+    id: 1
+    name: "meta.no_of_pools"
+    bitwidth: 4
+    match_type: EXACT
+  }
+  action_refs {
+    id: 28811645
+  }
+  action_refs {
+    id: 25496855
+  }
+  action_refs {
+    id: 21162130
+  }
+  action_refs {
+    id: 22446820
+  }
+  action_refs {
+    id: 26730342
+  }
+  action_refs {
+    id: 29412275
+  }
+  action_refs {
+    id: 17835095
+  }
+  action_refs {
+    id: 18314342
+  }
+  action_refs {
+    id: 20041883
+  }
+  action_refs {
+    id: 24004031
+  }
+  action_refs {
+    id: 18370836
+  }
+  action_refs {
+    id: 30576264
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 12
+}
+actions {
+  preamble {
+    id: 21257015
+    name: "NoAction"
+    alias: "NoAction"
+    annotations: "@noWarn(\"unused\")"
+  }
+}
+actions {
+  preamble {
+    id: 27646489
+    name: "send_to_port"
+    alias: "send_to_port"
+    annotations: "@noWarn(\"unused\")"
+  }
+}
+actions {
+  preamble {
+    id: 30788783
+    name: "ingress_drop"
+    alias: "ingress_drop"
+    annotations: "@noWarn(\"unused\")"
+  }
+}
+actions {
+  preamble {
+    id: 32552192
+    name: "sw_ingress_control.get_operation_bitmap"
+    alias: "get_operation_bitmap"
+  }
+  params {
+    id: 1
+    name: "operation_bitmap"
+    bitwidth: 12
+  }
+}
+actions {
+  preamble {
+    id: 27620170
+    name: "sw_ingress_control.save_pool_0"
+    alias: "save_pool_0"
+  }
+}
+actions {
+  preamble {
+    id: 32306892
+    name: "sw_ingress_control.read_pool_0"
+    alias: "read_pool_0"
+  }
+}
+actions {
+  preamble {
+    id: 25434375
+    name: "sw_ingress_control.save_pool_1"
+    alias: "save_pool_1"
+  }
+}
+actions {
+  preamble {
+    id: 27990600
+    name: "sw_ingress_control.read_pool_1"
+    alias: "read_pool_1"
+  }
+}
+actions {
+  preamble {
+    id: 29183236
+    name: "sw_ingress_control.save_pool_2"
+    alias: "save_pool_2"
+  }
+}
+actions {
+  preamble {
+    id: 22724519
+    name: "sw_ingress_control.read_pool_2"
+    alias: "read_pool_2"
+  }
+}
+actions {
+  preamble {
+    id: 18164147
+    name: "sw_ingress_control.save_pool_3"
+    alias: "save_pool_3"
+  }
+}
+actions {
+  preamble {
+    id: 18858801
+    name: "sw_ingress_control.read_pool_3"
+    alias: "read_pool_3"
+  }
+}
+actions {
+  preamble {
+    id: 22709311
+    name: "sw_ingress_control.save_pool_4"
+    alias: "save_pool_4"
+  }
+}
+actions {
+  preamble {
+    id: 30696602
+    name: "sw_ingress_control.read_pool_4"
+    alias: "read_pool_4"
+  }
+}
+actions {
+  preamble {
+    id: 27877596
+    name: "sw_ingress_control.save_pool_5"
+    alias: "save_pool_5"
+  }
+}
+actions {
+  preamble {
+    id: 25594366
+    name: "sw_ingress_control.read_pool_5"
+    alias: "read_pool_5"
+  }
+}
+actions {
+  preamble {
+    id: 32825202
+    name: "sw_ingress_control.save_pool_6"
+    alias: "save_pool_6"
+  }
+}
+actions {
+  preamble {
+    id: 19934545
+    name: "sw_ingress_control.read_pool_6"
+    alias: "read_pool_6"
+  }
+}
+actions {
+  preamble {
+    id: 21805605
+    name: "sw_ingress_control.save_pool_7"
+    alias: "save_pool_7"
+  }
+}
+actions {
+  preamble {
+    id: 28234327
+    name: "sw_ingress_control.read_pool_7"
+    alias: "read_pool_7"
+  }
+}
+actions {
+  preamble {
+    id: 25171593
+    name: "sw_ingress_control.save_pool_8"
+    alias: "save_pool_8"
+  }
+}
+actions {
+  preamble {
+    id: 26572324
+    name: "sw_ingress_control.read_pool_8"
+    alias: "read_pool_8"
+  }
+}
+actions {
+  preamble {
+    id: 30244131
+    name: "sw_ingress_control.save_pool_9"
+    alias: "save_pool_9"
+  }
+}
+actions {
+  preamble {
+    id: 29071472
+    name: "sw_ingress_control.read_pool_9"
+    alias: "read_pool_9"
+  }
+}
+actions {
+  preamble {
+    id: 17106590
+    name: "sw_ingress_control.save_pool_10"
+    alias: "save_pool_10"
+  }
+}
+actions {
+  preamble {
+    id: 24338355
+    name: "sw_ingress_control.read_pool_10"
+    alias: "read_pool_10"
+  }
+}
+actions {
+  preamble {
+    id: 25048977
+    name: "sw_ingress_control.save_pool_11"
+    alias: "save_pool_11"
+  }
+}
+actions {
+  preamble {
+    id: 22323575
+    name: "sw_ingress_control.read_pool_11"
+    alias: "read_pool_11"
+  }
+}
+actions {
+  preamble {
+    id: 28811645
+    name: "sw_ingress_control.append_stack_idx_1"
+    alias: "append_stack_idx_1"
+  }
+}
+actions {
+  preamble {
+    id: 25496855
+    name: "sw_ingress_control.append_stack_idx_2"
+    alias: "append_stack_idx_2"
+  }
+}
+actions {
+  preamble {
+    id: 21162130
+    name: "sw_ingress_control.append_stack_idx_3"
+    alias: "append_stack_idx_3"
+  }
+}
+actions {
+  preamble {
+    id: 22446820
+    name: "sw_ingress_control.append_stack_idx_4"
+    alias: "append_stack_idx_4"
+  }
+}
+actions {
+  preamble {
+    id: 26730342
+    name: "sw_ingress_control.append_stack_idx_5"
+    alias: "append_stack_idx_5"
+  }
+}
+actions {
+  preamble {
+    id: 29412275
+    name: "sw_ingress_control.append_stack_idx_6"
+    alias: "append_stack_idx_6"
+  }
+}
+actions {
+  preamble {
+    id: 17835095
+    name: "sw_ingress_control.append_stack_idx_7"
+    alias: "append_stack_idx_7"
+  }
+}
+actions {
+  preamble {
+    id: 18314342
+    name: "sw_ingress_control.append_stack_idx_8"
+    alias: "append_stack_idx_8"
+  }
+}
+actions {
+  preamble {
+    id: 20041883
+    name: "sw_ingress_control.append_stack_idx_9"
+    alias: "append_stack_idx_9"
+  }
+}
+actions {
+  preamble {
+    id: 24004031
+    name: "sw_ingress_control.append_stack_idx_10"
+    alias: "append_stack_idx_10"
+  }
+}
+actions {
+  preamble {
+    id: 18370836
+    name: "sw_ingress_control.append_stack_idx_11"
+    alias: "append_stack_idx_11"
+  }
+}
+actions {
+  preamble {
+    id: 30576264
+    name: "sw_ingress_control.append_stack_idx_12"
+    alias: "append_stack_idx_12"
+  }
+}
+registers {
+  preamble {
+    id: 375742727
+    name: "sw_ingress_control.pool_0"
+    alias: "pool_0"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 373820621
+    name: "sw_ingress_control.pool_1"
+    alias: "pool_1"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 385460272
+    name: "sw_ingress_control.pool_2"
+    alias: "pool_2"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 381711296
+    name: "sw_ingress_control.pool_3"
+    alias: "pool_3"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 378459997
+    name: "sw_ingress_control.pool_4"
+    alias: "pool_4"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 376420639
+    name: "sw_ingress_control.pool_5"
+    alias: "pool_5"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 372317858
+    name: "sw_ingress_control.pool_6"
+    alias: "pool_6"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 370925686
+    name: "sw_ingress_control.pool_7"
+    alias: "pool_7"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 383141355
+    name: "sw_ingress_control.pool_8"
+    alias: "pool_8"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 369174593
+    name: "sw_ingress_control.pool_9"
+    alias: "pool_9"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 382341570
+    name: "sw_ingress_control.pool_10"
+    alias: "pool_10"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 382316993
+    name: "sw_ingress_control.pool_11"
+    alias: "pool_11"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 370488827
+    name: "sw_ingress_control.occupancy_bitmaps"
+    alias: "occupancy_bitmaps"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 12
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 383768196
+    name: "sw_ingress_control.available_pools"
+    alias: "available_pools"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 4
+      }
+    }
+  }
+  size: 64
+}
+registers {
+  preamble {
+    id: 373149648
+    name: "sw_ingress_control.pool_save_pos"
+    alias: "pool_save_pos"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 6
+      }
+    }
+  }
+  size: 1
+}
+registers {
+  preamble {
+    id: 376055585
+    name: "sw_ingress_control.byte_saved_total"
+    alias: "byte_saved_total"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 12
+      }
+    }
+  }
+  size: 1
+}
+registers {
+  preamble {
+    id: 375858014
+    name: "sw_ingress_control.pkt_data_indices"
+    alias: "pkt_data_indices"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 6
+      }
+    }
+  }
+  size: 128
+}
+registers {
+  preamble {
+    id: 378114593
+    name: "sw_ingress_control.pkt_occupied"
+    alias: "pkt_occupied"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 1
+      }
+    }
+  }
+  size: 128
+}
+registers {
+  preamble {
+    id: 380839170
+    name: "sw_ingress_control.pool_usage_counts"
+    alias: "pool_usage_counts"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 4
+      }
+    }
+  }
+  size: 128
+}
+registers {
+  preamble {
+    id: 374236661
+    name: "sw_ingress_control.pkt_data_sizes"
+    alias: "pkt_data_sizes"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 8
+      }
+    }
+  }
+  size: 128
+}
+registers {
+  preamble {
+    id: 377394180
+    name: "sw_ingress_control.pkt_column_bitmaps"
+    alias: "pkt_column_bitmaps"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 12
+      }
+    }
+  }
+  size: 128
+}
+registers {
+  preamble {
+    id: 377559582
+    name: "sw_ingress_control.pkt_save_pos"
+    alias: "pkt_save_pos"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 7
+      }
+    }
+  }
+  size: 1
+}
+registers {
+  preamble {
+    id: 375613442
+    name: "sw_ingress_control.pkt_read_pos"
+    alias: "pkt_read_pos"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 7
+      }
+    }
+  }
+  size: 1
+}
+registers {
+  preamble {
+    id: 380786971
+    name: "sw_ingress_control.worker_packet_count"
+    alias: "worker_packet_count"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 10
+      }
+    }
+  }
+  size: 1
+}
+type_info {
+}

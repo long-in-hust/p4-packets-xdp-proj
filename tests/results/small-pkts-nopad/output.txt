@@ -1,0 +1,11 @@
+Max messages per agg. packet: 3   -   Maximum throughput: 350 kbps
+Max messages per agg. packet: 3   -   Maximum throughput: 350 kbps
+Max messages per agg. packet: 11   -   Maximum throughput: 300 kbps
+Max messages per agg. packet: 15   -   Maximum throughput: 250 kbps
+Max messages per agg. packet: 19   -   Maximum throughput: 350 kbps
+Max messages per agg. packet: 23   -   Maximum throughput: 300 kbps
+Max messages per agg. packet: 27   -   Maximum throughput: 250 kbps
+Max messages per agg. packet: 31   -   Maximum throughput: 350 kbps
+Max messages per agg. packet: 35   -   Maximum throughput: 350 kbps
+Max messages per agg. packet: 39   -   Maximum throughput: 300 kbps
+Max messages per agg. packet: 43   -   Maximum throughput: 250 kbps

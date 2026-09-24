@@ -1,0 +1,11 @@
+Max number of msgs in agg packet: 3   -   Maximum throughput: 31 kbps
+Max number of msgs in agg packet: 7   -   Maximum throughput: 30 kbps
+Max number of msgs in agg packet: 11   -   Maximum throughput: 31 kbps
+Max number of msgs in agg packet: 15   -   Maximum throughput: 33 kbps
+Max number of msgs in agg packet: 19   -   Maximum throughput: 30 kbps
+Max number of msgs in agg packet: 23   -   Maximum throughput: 32 kbps
+Max number of msgs in agg packet: 27   -   Maximum throughput: 33 kbps
+Max number of msgs in agg packet: 31   -   Maximum throughput: 33 kbps
+Max number of msgs in agg packet: 35   -   Maximum throughput: 30 kbps
+Max number of msgs in agg packet: 39   -   Maximum throughput: 27 kbps
+Max number of msgs in agg packet: 43   -   Maximum throughput: 24 kbps

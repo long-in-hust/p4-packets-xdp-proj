@@ -1,0 +1,6 @@
+Max worker packets: 1   -   Maximum throughput: 300 kbps
+Max worker packets: 2   -   Maximum throughput: 250 kbps
+Max worker packets: 4   -   Maximum throughput: 200 kbps
+Max worker packets: 6   -   Maximum throughput: 150 kbps
+Max worker packets: 8   -   Maximum throughput: 250 kbps
+Max worker packets: 10   -   Maximum throughput: 300 kbps
