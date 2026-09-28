@@ -5,9 +5,10 @@ LOGS_DEVICES_DIR = $(LOG_DIR)/devices
 PCAP_DIR = pcap
 
 P4C = p4c-bm2-psa
+P4C_DPDK = p4c-dpdk
 MININET = /home/p4/src/p4dev-python-venv/bin/mn
 PYTHON = /home/p4/src/p4dev-python-venv/bin/python
-P4C_ARGS_AGG = --p4runtime-files $(BUILD_DIR)/l4_aggregate.p4info.txtpb --p4runtime-format text
+P4C_ARGS_AGG = --p4runtime-format text
 P4C_ARGS_SPL = --p4runtime-files $(BUILD_DIR)/l4_split.p4info.txtpb --p4runtime-format text
 source := $(wildcard $(SRC_DIR)/*.p4)
 P4_FILES := $(notdir $(source))
@@ -27,16 +28,35 @@ run_simple:
 build_aggregator:	dirs $(compiled_json)
 	@echo "---------------------------------"
 	@echo "Building L2 Aggregator..."
-	$(P4C) --p4v 16 $(P4C_ARGS_AGG) --arch psa -o $(BUILD_DIR)/l4_aggregate.json \
-		--p4runtime-files $(BUILD_DIR)/l4_aggregate.p4info.txtpb src/aggregator/main.p4
+	mkdir -p $(BUILD_DIR)/bmv2
+	$(P4C) --p4v 16 $(P4C_ARGS_AGG) --arch psa -o $(BUILD_DIR)/bmv2/l4_aggregate.json \
+		--p4runtime-files $(BUILD_DIR)/bmv2/l4_aggregate.p4info.txtpb src/aggregator/main.p4
+	@echo "Building Succeeded..."
+
+build_aggregator_dpdk:	dirs $(compiled_json)
+	@echo "---------------------------------"
+	@echo "Building L2 Aggregator..."
+	mkdir -p $(BUILD_DIR)/dpdk
+	$(P4C_DPDK) --p4v 16 $(P4C_ARGS_AGG) --arch psa -o $(BUILD_DIR)/dpdk/l4_aggregate.spec \
+		--p4runtime-files $(BUILD_DIR)/dpdk/l4_aggregate.p4info.txtpb src/aggregator/main.p4
 	@echo "Building Succeeded..."
 
 build_aggregator_ir:	dirs $(compiled_json)
 	@echo "---------------------------------"
 	@echo "Building L2 Aggregator..."
-	$(P4C) --p4v 16 $(P4C_ARGS_AGG) --arch psa -o $(BUILD_DIR)/l4_aggregate.json \
-		--toJSON $(BUILD_DIR)/l4_aggregate_ir.json \
-		--p4runtime-files $(BUILD_DIR)/l4_aggregate.p4info.txtpb src/aggregator/main.p4
+	mkdir -p $(BUILD_DIR)/bmv2
+	$(P4C) --p4v 16 $(P4C_ARGS_AGG) --arch psa -o $(BUILD_DIR)/bmv2/l4_aggregate.json \
+		--toJSON $(BUILD_DIR)/bmv2/l4_aggregate_ir.json \
+		--p4runtime-files $(BUILD_DIR)/bmv2/l4_aggregate.p4info.txtpb src/aggregator/main.p4
+	@echo "Building Succeeded..."
+
+build_aggregator_dpdk_ir:	dirs $(compiled_json)
+	@echo "---------------------------------"
+	@echo "Building L2 Aggregator..."
+	mkdir -p $(BUILD_DIR)/dpdk
+	(P4C_DPDK)  --p4v 16 $(P4C_ARGS_AGG) --arch psa -o $(BUILD_DIR)/dpdk/l4_aggregate.spec \
+		--toJSON $(BUILD_DIR)/dpdk/l4_aggregate_ir.json \
+		--p4runtime-files $(BUILD_DIR)/dpdk/l4_aggregate.p4info.txtpb src/aggregator/main.p4
 	@echo "Building Succeeded..."
 
 build_simple:	dirs $(compiled_json)
