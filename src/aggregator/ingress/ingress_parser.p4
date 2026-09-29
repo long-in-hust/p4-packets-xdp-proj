@@ -7,9 +7,6 @@ parser sw_ingress_parser (
 )
 
 {
-    bit<16> tmp_msg_type = 0;
-    bit<16> tmp_msg_len = 0;
-
     state start {
         transition parse_ethernet;
     }
@@ -36,16 +33,16 @@ parser sw_ingress_parser (
     }
 
     state parse_type {
-        tmp_msg_type = packet.lookahead<bit<16>>();
-        transition select (tmp_msg_type) {
+        meta.tmp_msg_type = packet.lookahead<packet_type_t>().type_field;
+        transition select (meta.tmp_msg_type) {
             0xfffb: parse_aggregation_h;
             default: get_len;
         }
     }
 
     state get_len {
-        tmp_msg_len = ((hdr.udp.length - 8) / 4);
-        transition select (tmp_msg_len) {
+        meta.tmp_msg_len = ((hdr.udp.length - 8) / 4);
+        transition select (meta.tmp_msg_len) {
             0: get_remaining_bytes;
             1: msg1;
             2: msg2;

@@ -6,6 +6,7 @@ PCAP_DIR = pcap
 
 P4C = p4c-bm2-psa
 P4C_DPDK = p4c-dpdk
+P4C_EBPF = p4c-ebpf
 MININET = /home/p4/src/p4dev-python-venv/bin/mn
 PYTHON = /home/p4/src/p4dev-python-venv/bin/python
 P4C_ARGS_AGG = --p4runtime-format text
@@ -41,6 +42,14 @@ build_aggregator_dpdk:	dirs $(compiled_json)
 		--p4runtime-files $(BUILD_DIR)/dpdk/l4_aggregate.p4info.txtpb src/aggregator/main.p4
 	@echo "Building Succeeded..."
 
+build_aggregator_ebpf:	dirs $(compiled_json)
+	@echo "---------------------------------"
+	@echo "Building L2 Aggregator..."
+	mkdir -p $(BUILD_DIR)/ebpf
+	$(P4C_EBPF) --p4v 16 $(P4C_ARGS_AGG) --arch psa -o $(BUILD_DIR)/ebpf/l4_aggregate.C \
+		--p4runtime-files $(BUILD_DIR)/ebpf/l4_aggregate.p4info.txtpb src/aggregator/main.p4
+	@echo "Building Succeeded..."
+
 build_aggregator_ir:	dirs $(compiled_json)
 	@echo "---------------------------------"
 	@echo "Building L2 Aggregator..."
@@ -54,7 +63,7 @@ build_aggregator_dpdk_ir:	dirs $(compiled_json)
 	@echo "---------------------------------"
 	@echo "Building L2 Aggregator..."
 	mkdir -p $(BUILD_DIR)/dpdk
-	(P4C_DPDK)  --p4v 16 $(P4C_ARGS_AGG) --arch psa -o $(BUILD_DIR)/dpdk/l4_aggregate.spec \
+	$(P4C_DPDK)  --p4v 16 $(P4C_ARGS_AGG) --arch psa -o $(BUILD_DIR)/dpdk/l4_aggregate.spec \
 		--toJSON $(BUILD_DIR)/dpdk/l4_aggregate_ir.json \
 		--p4runtime-files $(BUILD_DIR)/dpdk/l4_aggregate.p4info.txtpb src/aggregator/main.p4
 	@echo "Building Succeeded..."

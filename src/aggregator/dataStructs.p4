@@ -132,6 +132,9 @@ struct metadata_t {
 
     saved_size_t read_payload_size;
     bit<4> stack_front;
+
+    bit<16> tmp_msg_type;
+    bit<16> tmp_msg_len;
 }
 
 // placeholder, dùng để gán kiểu cho các metadata chưa/không cần thiết trong dự án này
