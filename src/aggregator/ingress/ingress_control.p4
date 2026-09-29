@@ -67,9 +67,8 @@ control sw_ingress_control (
     // pool 0
 
     action save_pool_0() {
-        pool_0.write(meta.pool_save_pos, hdr.Msg[0].msg);
-        hdr.Msg.pop_front(1);
-        meta.occupancy_bitmap[0:0] = 1;
+        pool_0.write(meta.pool_save_pos, hdr.Msg[meta.stack_front].msg);
+        meta.stack_front = meta.stack_front + 1;
     }
 
     action read_pool_0() {
@@ -94,8 +93,8 @@ control sw_ingress_control (
     // pool 1
 
     action save_pool_1() {
-        pool_1.write(meta.pool_save_pos, hdr.Msg[0].msg);
-        hdr.Msg.pop_front(1);
+        pool_1.write(meta.pool_save_pos, hdr.Msg[meta.stack_front].msg);
+        meta.stack_front = meta.stack_front + 1;
     }
 
     action read_pool_1() {
@@ -120,8 +119,8 @@ control sw_ingress_control (
     // pool 2
 
     action save_pool_2() {
-        pool_2.write(meta.pool_save_pos, hdr.Msg[0].msg);
-        hdr.Msg.pop_front(1);
+        pool_2.write(meta.pool_save_pos, hdr.Msg[meta.stack_front].msg);
+        meta.stack_front = meta.stack_front + 1;
     }
 
     action read_pool_2() {
@@ -146,8 +145,8 @@ control sw_ingress_control (
     // pool 3
 
     action save_pool_3() {
-        pool_3.write(meta.pool_save_pos, hdr.Msg[0].msg);
-        hdr.Msg.pop_front(1);
+        pool_3.write(meta.pool_save_pos, hdr.Msg[meta.stack_front].msg);
+        meta.stack_front = meta.stack_front + 1;
     }
 
     action read_pool_3() {
@@ -172,8 +171,8 @@ control sw_ingress_control (
     // pool 4
 
     action save_pool_4() {
-        pool_4.write(meta.pool_save_pos, hdr.Msg[0].msg);
-        hdr.Msg.pop_front(1);
+        pool_4.write(meta.pool_save_pos, hdr.Msg[meta.stack_front].msg);
+        meta.stack_front = meta.stack_front + 1;
     }
 
     action read_pool_4() {
@@ -198,8 +197,8 @@ control sw_ingress_control (
     // pool 5
 
     action save_pool_5() {
-        pool_5.write(meta.pool_save_pos, hdr.Msg[0].msg);
-        hdr.Msg.pop_front(1);
+        pool_5.write(meta.pool_save_pos, hdr.Msg[meta.stack_front].msg);
+        meta.stack_front = meta.stack_front + 1;
     }
 
     action read_pool_5() {
@@ -224,8 +223,8 @@ control sw_ingress_control (
     // pool 6
 
     action save_pool_6() {
-        pool_6.write(meta.pool_save_pos, hdr.Msg[0].msg);
-        hdr.Msg.pop_front(1);
+        pool_6.write(meta.pool_save_pos, hdr.Msg[meta.stack_front].msg);
+        meta.stack_front = meta.stack_front + 1;
     }
 
     action read_pool_6() {
@@ -250,8 +249,8 @@ control sw_ingress_control (
     // pool 7
 
     action save_pool_7() {
-        pool_7.write(meta.pool_save_pos, hdr.Msg[0].msg);
-        hdr.Msg.pop_front(1);
+        pool_7.write(meta.pool_save_pos, hdr.Msg[meta.stack_front].msg);
+        meta.stack_front = meta.stack_front + 1;
     }
 
     action read_pool_7() {
@@ -276,8 +275,8 @@ control sw_ingress_control (
     // pool 8
 
     action save_pool_8() {
-        pool_8.write(meta.pool_save_pos, hdr.Msg[0].msg);
-        hdr.Msg.pop_front(1);
+        pool_8.write(meta.pool_save_pos, hdr.Msg[meta.stack_front].msg);
+        meta.stack_front = meta.stack_front + 1;
     }
 
     action read_pool_8() {
@@ -302,8 +301,8 @@ control sw_ingress_control (
     // pool 9
 
     action save_pool_9() {
-        pool_9.write(meta.pool_save_pos, hdr.Msg[0].msg);
-        hdr.Msg.pop_front(1);
+        pool_9.write(meta.pool_save_pos, hdr.Msg[meta.stack_front].msg);
+        meta.stack_front = meta.stack_front + 1;
     }
 
     action read_pool_9() {
@@ -328,8 +327,8 @@ control sw_ingress_control (
     // pool 10
 
     action save_pool_10() {
-        pool_10.write(meta.pool_save_pos, hdr.Msg[0].msg);
-        hdr.Msg.pop_front(1);
+        pool_10.write(meta.pool_save_pos, hdr.Msg[meta.stack_front].msg);
+        meta.stack_front = meta.stack_front + 1;
     }
 
     action read_pool_10() {
@@ -354,8 +353,8 @@ control sw_ingress_control (
     // pool 11
 
     action save_pool_11() {
-        pool_11.write(meta.pool_save_pos, hdr.Msg[0].msg);
-        hdr.Msg.pop_front(1);
+        pool_11.write(meta.pool_save_pos, hdr.Msg[meta.stack_front].msg);
+        meta.stack_front = meta.stack_front + 1;
     }
 
     action read_pool_11() {
@@ -591,6 +590,7 @@ control sw_ingress_control (
             {
                 pool_save_pos.write(0, meta.pool_save_pos);
             }
+            meta.stack_front = 0;
         }
         // luồng làm việc nếu là gói tin làm việc tổng hợp
         else

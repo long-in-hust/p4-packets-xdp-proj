@@ -131,6 +131,7 @@ struct metadata_t {
     bitmap_t pool_bitmap;
 
     saved_size_t read_payload_size;
+    bit<4> stack_front;
 }
 
 // placeholder, dùng để gán kiểu cho các metadata chưa/không cần thiết trong dự án này

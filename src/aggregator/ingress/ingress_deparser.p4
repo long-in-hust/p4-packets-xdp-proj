@@ -14,13 +14,14 @@ control sw_ingress_deparser (
     apply 
     {
         // tính lại checksum IPv4
+        bit<16> chk_word_0 = hdr.ipv4.version ++ hdr.ipv4.ihl ++ hdr.ipv4.diffserv;
+        bit<32> chk_word_3_4 = hdr.ipv4.flags ++ hdr.ipv4.fragOffset ++ hdr.ipv4.ttl ++ hdr.ipv4.protocol;
         checksum.clear();
         checksum.add({
-            /* 16-bit word  0   */ hdr.ipv4.version, hdr.ipv4.ihl, hdr.ipv4.diffserv,
+            /* 16-bit word  0   */ chk_word_0,
             /* 16-bit word  1   */ hdr.ipv4.totalLen,
             /* 16-bit word  2   */ hdr.ipv4.identification,
-            /* 16-bit word  3   */ hdr.ipv4.flags, hdr.ipv4.fragOffset,
-            /* 16-bit word  4   */ hdr.ipv4.ttl, hdr.ipv4.protocol,
+            /* 16-bit word  3 + 4   */ chk_word_3_4,
             /* 16-bit word  5 skip hdr.ipv4.hdrChecksum, */
             /* 16-bit words 6-7 */ hdr.ipv4.srcAddr,
             /* 16-bit words 8-9 */ hdr.ipv4.dstAddr
