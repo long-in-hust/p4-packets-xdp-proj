@@ -472,7 +472,7 @@ control sw_ingress_control (
         {
             // Nếu không phải gói UDP hoặc gói UDP dài hơn mức có thể lưu,
             // chuyển tiếp như bình thường
-            if (!hdr.udp.isValid() || hdr.udp.length >= 56) 
+            if (hdr.udp.length >= 56 || !hdr.udp.isValid()) 
             {
                 send_to_port(std_ingress_output_meta, (PortId_t)2);
                 return;
