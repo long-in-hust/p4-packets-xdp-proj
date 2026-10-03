@@ -46,7 +46,8 @@ build_aggregator_ebpf:	dirs $(compiled_json)
 	@echo "---------------------------------"
 	@echo "Building L2 Aggregator..."
 	mkdir -p $(BUILD_DIR)/ebpf
-	$(P4C_EBPF) --p4v 16 $(P4C_ARGS_AGG) --arch psa -o $(BUILD_DIR)/ebpf/l4_aggregate.C \
+	$(P4C_EBPF) --p4v 16 $(P4C_ARGS_AGG) --arch psa \
+		--emit-externs -o $(BUILD_DIR)/ebpf/l4_aggregate.c \
 		--p4runtime-files $(BUILD_DIR)/ebpf/l4_aggregate.p4info.txtpb src/aggregator/main.p4
 	@echo "Building Succeeded..."
 
